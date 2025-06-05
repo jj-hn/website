@@ -1,12 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Free Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marci Metzger Homes - Pahrump, NV</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <h1>Welcome to My Website!</h1>
-  <p>This is a free website hosted for free.</p>
-</body>
 
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Marci Metzger Homes</h1>
+      <p>Top Residential REALTOR in Pahrump</p>
+      <p>Serving Southern Nevada with over 25 years of experience</p>
+      <a href="#contact" class="cta-button">Contact Marci</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Marci</h2>
+      <p>Marci was a REALTOR, then licensed Broker, in Washington State. Now, she is enjoying the sunshine, and helping clients in Southern Nevada. Having helped buyers and sellers in many markets since 1995, she is a wealth of knowledge.</p>
+      <p>In Her Words: "I love that small-town feeling that our community offers. Spectacular golf courses, parks, pool, and easy access to Las Vegas make Pahrump a great place to call home. Working or retired, fast-paced or looking to relax... there's a place for you here!"</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Residential & Commercial Real Estate</li>
+        <li>Investment Properties</li>
+        <li>Market Analysis & Property Valuations</li>
+        <li>Buyer & Seller Representation</li>
+        <li>Relocation Assistance</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Featured Listings Section -->
+  <section id="listings">
+    <div class="container">
+      <h2>Featured Listings</h2>
+      <div class="listing">
+        <img src="images/property1.jpg" alt="Property 1">
+        <p>Modern Villa in Beverly Hills - $4,500,000</p>
+      </div>
+      <div class="listing">
+        <img src="images/property2.jpg" alt="Property 2">
+        <p>Beachfront Mansion in Malibu - $7,200,000</p>
+      </div>
+      <!-- Add more listings as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Marci Metzger Homes. All Rights Reserved.</p>
+      <p>3190 HW-160, Suite F, Pahrump, Nevada 89048</p>
+      <p>Open daily 8:00 am – 7:00 pm. Appointments outside office hours available upon request.</p>
+    </div>
+  </footer>
+
+</body>
 </html>
